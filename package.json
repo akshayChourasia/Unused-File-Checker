@@ -1,0 +1,43 @@
+{
+  "name": "unused-files-checker",
+  "displayName": "Unused Files Checker",
+  "description": "Check for unused files in a React project",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.checkUnusedFiles"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Unused Files Checker Configuration",
+      "properties": {
+        "unusedFilesChecker.ignoredPaths": {
+          "type": "array",
+          "default": [
+            "node_modules",
+            "build"
+          ],
+          "description": "List of directories or files to ignore when checking for unused files."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.checkUnusedFiles",
+        "title": "Check Unused Files"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/node": "^14.14.35",
+    "@types/vscode": "^1.1.37"
+  }
+}
