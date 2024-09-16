@@ -1,4 +1,4 @@
-# Project Title: Unused File Detector Extension
+# Unused File Detector Extension
 
 ## Overview
 
