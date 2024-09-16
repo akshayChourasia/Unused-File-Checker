@@ -1,7 +1,3 @@
-Here’s a basic structure for your `README.md` file that you can use to display the code in your GitHub profile. This file can explain the purpose of your project, give installation instructions, and show how to contribute:
-
----
-
 # Project Title: Unused File Detector Extension
 
 ## Overview
